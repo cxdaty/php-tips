@@ -11,6 +11,7 @@
   //发布
   $redis = new \Redis();
   $redis->connect('127.0.0.1', 6379);
+  $redis->auth('mowork&201809');
   $redis->publish('msg', '来自msg频道的推送');
   echo "msg频道消息推送成功～ \n";
   $redis->close();

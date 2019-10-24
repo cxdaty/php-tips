@@ -12,6 +12,7 @@
 
   $redis = new \Redis();
   $redis->pconnect('127.0.0.1', 6379);
+ 
 
   //订阅
   echo "订阅msg这个频道，等待消息推送... \n";
