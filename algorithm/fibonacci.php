@@ -30,6 +30,12 @@ function forcycle($n = 0)
     return $res;
 }
 
+function Fibonacci($n){
+
+    return $n < 2 ? $n : Fibonacci($n - 1) + Fibonacci($n - 2);
+}
+
+
 /**
  * 递归循环斐波纳耶
  *
