@@ -170,6 +170,19 @@ FROM `destination_table_name`;
 - 查看慢日志：mysqldumpslow -s [c:按记录次数排序/t:时间/l:锁定时间/r:返回的记录数] -t [n:前n条数据] -g "正则"　/path
 - 新增用户： insert into `user`(`Host`, `User`, `authentication_string`) value('localhost', 'username', password('pwd'))
 
+导出数据以及表结构
+
+/usr/local/mysql/bin/mysqldump  -uroot -p  数据库名 >/home/test.sql
+
+只导结构  不导出数据
+
+/usr/local/mysql/bin/mysqldump  -uroot -p -d 数据库名 > /home/test.sql
+
+只导数据 不导结构
+
+/usr/local/mysql/bin/mysqldump  -uroot -p123456 -t 数据库名 > /home/test.sql
+
+
 ### mysql 5.7 新增用户
 
 ```

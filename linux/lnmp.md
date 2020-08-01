@@ -316,10 +316,15 @@ root 项目根目录
 
 ```
 service php-fpm start
-service nginx start
+service nginx start/reload
 service mysql start
 service redisd start 
 ```
 
-
+```
+// php-fpm
+service php-fpm restart
+// nginx
+/usr/local/nginx/sbin/nginx -s reload
+```
 

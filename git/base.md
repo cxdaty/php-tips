@@ -51,6 +51,7 @@ git config --list
 ```
 git checkout -b develop origin/develop
 ```
+git clone -b 分支名称
 
 四、功能开发
 ```
@@ -125,6 +126,8 @@ git push origin release/v1.0.0
 //Source branch为 release 分支，此处为 release/v1.0.0
 //Target branch 为master分支
 
+release分支提交 merge request 请求合并到 develop 分支；
+
 4. merge request 结果操作
 //相关负责人 code review 后且同意合并
 //跳回 master，pull代码，并删除对应 release 分支
@@ -178,3 +181,7 @@ git push origin 1.0.0
 - 开发 dev
 ```
 
+克隆分支
+```
+git clone --branch 1.3.0 git@192.168.2.186
+```

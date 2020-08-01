@@ -13,7 +13,7 @@
   - 解释： 例如权限为777 代表 user/group/other 的权限为 4+2+1/4+2+1/4+2+1，
   4代表read读权限， 2代表写权限， 1代表执行权限
   - drwxr--r--中的第一位: d代表文件夹，s代表socket文件，-代表普通文件，l代表软链
-9. 变更文件所属用户或用户组： chown owner:group [file/folder]
+9. 变更文件所属用户或用户组： chown -R owner:group [file/folder]
 10. 新建文件：
  - touch [filename]
  - vi/vim [filename]
@@ -32,7 +32,11 @@
  - p代表：显示关联的程序
 16. 压缩
  - 解压缩：tar -zxvf [filename]
- - 压缩：tar -zcvf [filename]
+ - 压缩：tar -zcvf [filename].tar filename
+
+ #打包
+tar -czvf mowork-${version}.tar.gz mowork-${version}
+
 17. 查看当前命令所在的路径: which
 18. 查看当前用户
   - who

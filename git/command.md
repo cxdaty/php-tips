@@ -37,6 +37,9 @@
 ```
 已经进行了git commit，还未进行git push;使用远程仓库覆盖本地仓库
 1.git reset --hard origin/master
+
+git rm ： 同时从工作区和索引中删除文件。即本地的文件也被删除了。
+git rm --cached ： 从索引中删除文件。但是本地文件还存在， 只是不希望这个文件被版本控制。
 ```
 
 五、已推送(git push)
@@ -44,6 +47,14 @@
 回滚本地仓库，强制推送覆盖远程仓库
 git reset --hard HEAD^
 git push -f
+```
+
+六、修改冲突
+```
+1 git stash
+2 git pull
+3 git stash pop
+
 ```
 
 
